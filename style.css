@@ -3,10 +3,31 @@ html {
   background-image: url("background.jpg");
 }
 
-h1 {
-  text-align: center;
+#icon-bar {
+  width: 100%;
+  overflow: auto;
 }
 
-ul {
-  list-style: circle;
+#icon-bar a {
+  float: right;
+  text-align: center;
+  width: 10%;
+  margin: 10px 5%;
+  transition: all 0.3s ease;
+  color: black;
+  font-size: 28px;
+}
+
+#icon-bar a:hover {
+  color: blue;
+}
+
+#name-title {
+  text-align: center;
+  font-size: 90px;
+  transition: all .5s ease;
+}
+
+#name-title:hover {
+  color: darkred;
 }
