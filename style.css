@@ -9,25 +9,51 @@ html {
 }
 
 #icon-bar a {
-  float: right;
+  float: left;
   text-align: center;
-  width: 10%;
-  margin: 10px 5%;
+  width: 6%;
+  margin: 10px 5.333%;
   transition: all 0.3s ease;
   color: black;
   font-size: 28px;
+  target:
 }
 
 #icon-bar a:hover {
-  color: blue;
+  color: #355C7D;
 }
 
-#name-title {
+.main-title {
   text-align: center;
-  font-size: 90px;
+  font-size: 48px;
   transition: all .5s ease;
 }
 
-#name-title:hover {
-  color: darkred;
+#selected-projects-list {
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+}
+
+#selected-projects-list a {
+  color: #355C7D;
+  text-decoration: none;
+  font-size: 26px;
+  transition: all .3s ease;
+}
+
+#selected-projects-list li {
+  display: inline-block;
+  margin: 5px 0;
+  padding: 0 10px;
+  border-radius: 15px;
+  transition: all .3s ease;
+}
+
+#selected-projects-list a:hover {
+  color: white;
+}
+
+#selected-projects-list li:hover{
+  background: #355C7D;
 }
