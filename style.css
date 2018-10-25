@@ -1,5 +1,5 @@
 html {
-  font-family: courier;
+  font-family: monospace;
   background-image: url("background.jpg");
 }
 
@@ -23,7 +23,12 @@ html {
   color: #355C7D;
 }
 
+.vert-center {
+  margin-top: 5em;
+}
+
 .main-title {
+  margin-bottom: 10px;
   text-align: center;
   font-size: 48px;
   transition: all .5s ease;
@@ -56,4 +61,20 @@ html {
 
 #selected-projects-list li:hover{
   background: #355C7D;
+}
+
+.centered-text{
+  text-align: center;
+}
+
+.background-black{
+  background-color: black;
+  color: white;
+}
+
+#student-dev {
+  font-size: 18px;
+  display: inline-block;
+  margin-top: -20px;
+  padding: 0 5px;
 }
