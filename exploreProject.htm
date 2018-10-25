@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+
+  <body>
+
+    <div id="icon-bar">
+      <a href="#" target="_self"><i class="fa fa-home"></i></a>
+      <a href="#" target="_self"><i class="fa fa-code"></i></a>
+      <a href="#"><i class="fa fa-github"></i></a>
+      <a href="#"><i class="fa fa-file"></i></a>
+      <a href="#"><i class="fa fa-instagram"></i></a>
+      <a href="#"><i class="fa fa-envelope"></i></a>
+    </div>
+    
+    <style>
+      #icon-bar {
+        width: 100%; /*makes the icon bar the width of the screen*/
+      }
+
+      #icon-bar a {
+        float: left; /*makes each "cell" go as far left on the screen as possible*/
+        text-align: center; /*Makes each icon go to the center of it's "cell"*/
+        width: 16.666%; /*sets each "cell" to 1/6 the size of the screen*/
+        color: black; /*makes icons black*/
+        font-size: 28px; /*sets size of icons*/
+        transition: all 0.3s ease; /*makes color transition gradual (not instant)*/
+      }
+
+      #icon-bar a:hover {
+        color: #355C7D; /*makes icons turn blue when hovered over*/
+      }
+    </style>
+    
+  </body>
+</html>
