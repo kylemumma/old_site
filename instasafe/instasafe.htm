@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="instasafestyles.css" type="text/css">
+</head>
+
+<body>
+  <div id="topPage">
+    <h1><i>InstaSafe</i></h1><br/>
+    <h3>Early Detection to Prevent School Shootings</h3>
+    <h2><u>Team Array Strings</u></h2>
+    <ul>
+      <li>Rishabh Jain</li>
+      <li>Kyle Mumma</li>
+      <li>Micheal Chung</li>
+      <li>Eric Hughes</li>
+      <li>Tim Herron</li>
+      <li>Nikhil Jain</li>
+    </ul>
+  </div>
+
+  <div id="secondPart">
+    <h1 id="problem" onmouseenter="problemHoverOn()" onmouseleave="problemHoverOff()">Problem: <span class="span-bg">Increasing Rate of Deadly Mass School Shootings in America</span></h1><br/><br/>
+    <h1 id="solution" onmouseenter="solutionHoverOn()" onmouseleave="solutionHoverOff()"><span class="span-bg">Solution:</span> Screening Social Media in Order to Detect Potential Shooters</h1>
+  </div>
+
+  <div id="thirdPart">
+    <h1>Technologies Used</h1>
+    <ul>
+      <li>Python</li>
+      <ul>
+        <li>Beautiful Soup - Webscraping</li>
+        <li>Imagga - Image Classification</li>
+        <li>HateSonar - Natural Language Processing</li>
+      </ul>
+      <li>C#</li>
+      <ul>
+        <li>C#.net - Risk Calculation</li>
+        <li>Windows Presentation Format - GUI</li>
+      </ul>
+    </ul>
+  </div>
+
+  <script>
+    function problemHoverOn(){
+      document.getElementById("problem").innerHTML = "<span class=\"bg-blue\">More people have died or been injured in mass school shootings in the US in the past 18 years than in the entire 20th century</span>";
+    }
+
+    function solutionHoverOn(){
+      document.getElementById("solution").innerHTML = "<span class=\"bg-blue\">A large majority of school shooters show warning signs on social media before they attack</span>";
+    }
+
+    function problemHoverOff(){
+      document.getElementById("problem").innerHTML = "Problem: <span class=\"span-bg\">Increasing Rate of Deadly Mass School Shootings in America</span>";
+    }
+
+    function solutionHoverOff(){
+      document.getElementById("solution").innerHTML = "<span class=\"span-bg\">Solution:</span> Screening Social Media in Order to Detect Potential Shooters";
+    }
+  </script>
+</body>
+
+</html>
