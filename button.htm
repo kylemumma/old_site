@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <button onclick="buttonPressed()">Click Me!</button>
+
+    <style>
+      button {
+        padding: 10px 20px;
+        background-image: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet);
+        border-radius: 10px;
+        text-transform: uppercase;
+        color: white;
+        font-weight: 600;
+        font-size: 18px;
+        border: none;
+        box-shadow: 2px 2px 3px 0 black;
+        transition: ease .2s all;
+      }
+
+      button:hover {
+        box-shadow: 5px 5px 3px black;
+        transform: translateX(-3px);
+        transform: translateY(-3px);
+        cursor: pointer;
+
+        transform: scale(1.1);
+      }
+    </style>
+
+    <script>
+      function buttonPressed(){
+        for(var i = 0; i < 1; i++){
+          window.open("http://meatspin.fr/", "", "width=800px, height=400px");
+        }
+      }
+    </script>
+  </body>
+</html>
