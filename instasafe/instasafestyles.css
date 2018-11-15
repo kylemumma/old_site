@@ -50,7 +50,21 @@ html {
   transition: ease .5s all;
 }
 
+#topPage a {
+  margin: 0px;
+  padding: 0px;
+  font-size: 25px;
+  color: #379683;
+  font-variant: small-caps;
+  transition: ease .5s all;
+  text-decoration: none;
+}
+
 #topPage li:hover{
+  color: #05386B;
+}
+
+#topPage a:hover{
   color: #05386B;
 }
 
