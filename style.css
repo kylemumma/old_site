@@ -1,6 +1,7 @@
 html {
   font-family: monospace;
   background-image: url("background.jpg");
+  text-align: center;
 }
 
 #icon-bar {
@@ -12,7 +13,7 @@ html {
   float: left;
   text-align: center;
   width: 6%;
-  margin: 10px 5.333%;
+  margin: 10px 7%;
   transition: all 0.3s ease;
   color: black;
   font-size: 28px;
@@ -64,7 +65,7 @@ html {
 }
 
 .centered-text{
-  text-align: center;
+  display: inline-block;
 }
 
 .background-black{
@@ -77,4 +78,9 @@ html {
   display: inline-block;
   margin-top: -20px;
   padding: 0 5px;
+  text-align: center;
+}
+
+.main-fa-list {
+  text-align: left;
 }
