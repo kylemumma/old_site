@@ -30,6 +30,26 @@ class Snowflake {
   update(){
     this.y += this.yspeed;
     
+    
+    //x interaction
+    if((this.x - mouseX >= 0 && this.x - mouseX <= 40) &&
+    Math.abs(this.y - mouseY) <= 40){
+      this.x += 40;
+    } else if((this.x - mouseX <= 0 && this.x - mouseX >= -40) &&
+    Math.abs(this.y - mouseY) <= 40){
+      this.x -= 40;
+    }
+    
+    
+    //y interaction
+    if((this.y - mouseY >= 0 && this.y - mouseY <= 40) &&
+    Math.abs(this.x - mouseX) <= 50){
+      this.y += 40;
+    } else if((this.y - mouseY <= 0 && this.y - mouseY >= -40) &&
+    Math.abs(this.x - mouseX) <= 50){
+      this.y -= 40;
+    }
+    
     if(this.y > displayHeight + 50){
       this.y = Math.floor(Math.random() * 1000) - 1000;
     }
