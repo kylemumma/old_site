@@ -46,7 +46,7 @@ html, body {
   color: rgb(248, 131, 121);
 }
 
-h2 {
+.big-title {
   display: inline-block;
 
   text-transform: uppercase;
