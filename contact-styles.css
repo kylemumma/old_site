@@ -4,6 +4,6 @@ body, html {
 }
 
 h2 {
-  background-color: none;
+  background-color: transparent;
   text-transform: none;
 }
