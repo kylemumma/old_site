@@ -2,3 +2,8 @@ body, html {
   background-image: none;
   background-color: #666;
 }
+
+h2 {
+  background-color: none;
+  text-transform: none;
+}
