@@ -1,0 +1,104 @@
+body, html {
+  padding: 0;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+main {
+  margin-top: 0;
+  background-image: url("bg-img1.jpg");
+  height: 90vh;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  text-align: center;
+
+  animation-name: bg-change;
+  animation-duration: 12s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes bg-change {
+  0% {
+    background-image: url("bg-img1.jpg");
+  }
+  24% {
+    background-image: url("bg-img1.jpg");
+  }
+  25% {
+    background-image: url("bg-img2.jpg");
+  }
+  49% {
+    background-image: url("bg-img2.jpg");
+  }
+  50% {
+    background-image: url("bg-img3.jpg");
+  }
+  74% {
+    background-image: url("bg-img3.jpg");
+  }
+  75% {
+    background-image: url("bg-img4.jpg");
+  }
+  100% {
+    background-image: url("bg-img4.jpg");
+  }
+}
+
+#navbar {
+  height: 10%;
+  width: 100%;
+  background-color: rgb(245, 245, 245);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0;
+}
+
+#logo {
+  transform: translate(40px, 0);
+}
+
+.em-button {
+  display: inline-block;
+  background-color: deepskyblue;
+  color: white !important;
+  padding: 10px 20px;
+  border-radius: 50px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 24px;
+  margin: 40vh auto;
+  transition: ease .2s all;
+  font-weight: 500;
+}
+
+.em-button:hover {
+  background-color: crimson;
+}
+
+#nav-links {
+  font-size: 22px;
+  margin-right: 40px;
+  text-transform: uppercase;
+}
+
+#nav-links a {
+  text-decoration: none;
+  color: black;
+  margin: 0 20px;
+  transition: ease .2s all;
+}
+
+#nav-links a:hover {
+  color: crimson;
+}
+
+#logo-img {
+  padding: 2px;
+  height: 70px;
+}
