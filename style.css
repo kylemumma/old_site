@@ -1,94 +1,78 @@
 html, body {
   padding: 0;
   margin: 0;
-  font-family: monospace;
-  text-align: center;
-}
 
-.top-page {
-  height: 100vh;
-  background: url("background.jpg") no-repeat;
+  font-family: "Muli", sans-serif;
+
+  text-align: center;
+
+  background-image: url("background.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
   background-position: center;
+
+  height: 100vh;
+
+  letter-spacing: 1.5px;
+  color: white;
 }
 
-#icon-bar {
-  width: 100%;
-  overflow: auto;
+.nav-bar {
+  padding: 30px 10px 10px 10px;
+  margin-left: -21px;
 }
 
-#icon-bar a {
-  float: left;
-  text-align: center;
-  width: 6%;
-  margin: 10px 7%;
-  transition: all 0.3s ease;
-  color: black;
-  font-size: 28px;
-  target:
-}
-
-#icon-bar a:hover {
-  color: #355C7D;
-}
-
-.vert-center {
-  margin-top: 5em;
-}
-
-.main-title {
-  margin-bottom: 10px;
-  text-align: center;
-  font-size: 48px;
-  transition: all .5s ease;
-}
-
-#selected-projects-list {
-  list-style-type: none;
-  padding: 0;
-  text-align: center;
-}
-
-#selected-projects-list a {
-  color: #355C7D;
+.nav-bar a {
+  color: white;
+  color: rgba(255, 255, 255, 0.7);
   text-decoration: none;
-  font-size: 26px;
-  transition: all .3s ease;
+  text-transform: uppercase;
+  font-size: 19px;
+  transition: ease 0.3s all;
 }
 
-#selected-projects-list li {
-  display: inline-block;
-  margin: 5px 0;
-  padding: 0 10px;
-  border-radius: 15px;
-  transition: all .3s ease;
+.nav-bar a:hover {
+  color: rgba(248, 131, 121, 0.7);
 }
 
-#selected-projects-list a:hover {
+.nav-bar .main-logo {
   color: white;
+  font-size: 2em;
+  font-weight: 700;
+  margin: 0 20px;
 }
 
-#selected-projects-list li:hover{
-  background: #355C7D;
+.nav-bar .main-logo:hover {
+  color: rgb(248, 131, 121);
 }
 
-.centered-text{
+h2 {
   display: inline-block;
-}
 
-.background-black{
+  text-transform: uppercase;
+
+  font-size: 30px;
   background-color: black;
+  padding: 5px 10px;
+}
+
+.button {
   color: white;
+  text-decoration: none;
+  font-size: 20px;
+  text-transform: uppercase;
+  background-color: rgb(248, 131, 121);
+  padding: 10px 20px;
+  border-radius: 50px;
+  font-weight: 700;
+  transition: ease 0.3s all;
 }
 
-.hor-vert-center-h3 {
-  font-size: 18px;
-  display: inline-block;
-  margin-top: -20px;
-  padding: 0 5px;
-  text-align: center;
+.button:hover {
+  color: rgb(248, 131, 121);
+  background-color: white;
 }
 
-.main-fa-list {
-  text-align: left;
+main {
+  margin-top: 35vh;
 }
