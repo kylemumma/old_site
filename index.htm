@@ -18,7 +18,7 @@
       <nav class="mobile-nav-bar">
         <label for="toggle">&#9776;</label>
         <a href="index.htm" class="main-logo">Kyle Mumma</a>
-        <input type="checkbox" id="toggle">
+        <input type="checkbox" id="toggle" onclick="hideMain()">
 
         <div class="menu-links">
           <a href="#" target="_self" title="Selected Projects">Portfolio</a><br>
@@ -30,5 +30,18 @@
         <h2>Student Developer</h2><br>
         <a class="button" href='resume.pdf' target="_blank">View Resume</a>
       </main>
+
+      <script>
+        function hideMain(){
+          var checkbox = document.getElementById('toggle');
+          var mainContent = document.getElementsByTagName('main')[0];
+
+          if(checkbox.checked){
+            mainContent.style.display = "none";
+          } else {
+            mainContent.style.display = "inline";
+          }
+        }
+      </script>
   </body>
 </html>
