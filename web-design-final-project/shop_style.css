@@ -1,0 +1,43 @@
+body, html {
+  background-color: rgb(240, 240, 240);
+}
+
+/*Nav bar*/
+.nav-bar {
+  border: 1px solid black;
+}
+
+/*All items div*/
+.all-items-div {
+  padding-top: 1px;
+  transform: translate(0, 20px);
+  background-color: rgb(176, 224, 230);
+  background-image: url("imgs/snowfall.gif");
+  clear: both;
+  height: 1100px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+/*item-div*/
+.item-div {
+  background-color: white;
+  margin: 1%;
+  float: left;
+  display: block;
+  height: 300px;
+  border: 1px solid lightgrey;
+  width: 30%;
+  line-height: .5;
+  text-align: center;
+  transition: ease .3s all;
+}
+
+.item-div:hover {
+  transform: scale(1.1);
+  border-color: grey;
+}
+
+.item-div img {
+  height: 60%;
+}

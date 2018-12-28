@@ -1,0 +1,15 @@
+html{
+  font-family: "Courier", Courier, serif;
+  text-align:center;
+  background-image: url("bg.jpg");
+}
+
+img{
+  border-radius: 25px;
+}
+
+span{
+  background: black;
+  color: white;
+  font-size: 32px;
+}
