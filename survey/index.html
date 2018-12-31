@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <title>Programming Survey</title>
+  </head>
+  <body>
+    <header>
+      <h1 id="title">Programming Survey</h1>
+      <hr/>
+      <p id="description">Tell us about your coding experience</p>
+    </header>
+
+    <main>
+      <form id="survey-form" method="get">
+        <label id="name-label" for="name">* Name <input type="text" name="name" id="name" placeholder="Enter your name" required></input></label><br>
+
+        <label id="email-label" for="email">* Email <input type="email" id="email" name="name" placeholder="Enter your email" required></input></label><br>
+
+        <label id="number-label" for="age">Age <input type="number" id="number" name="age" placeholder="Enter your age" min="1" max="125"></input></label><br>
+
+        <label for="dropdown">* Which option best describes your current role?</label><br>
+        <select id="dropdown" name="dropdown" required>
+          <option disabled value>Select an option</option>
+          <option value="">Student</option>
+          <option value="">Full Time Developer</option>
+          <option value="">Freelancer</option>
+          <option value="">Full Time Learner</option>
+        </select><br>
+
+        <fieldset>
+          <legend>* How long have you been programming for?</legend><br>
+          <input type="radio" name="programming-length"  value="1" required>Less than 1 year</input><br>
+          <input type="radio" name="programming-length"  value="2" required>1 to 2 years</input><br>
+          <input type="radio" name="programming-length"  value="3" required>3 to 5 years</input><br>
+          <input type="radio" name="programming-length" value="4"  required>5+ years</input><br>
+        </fieldset>
+
+        <fieldset>
+          <legend>What kind of developer are you primarily?</legend>
+          <input type="checkbox" name="dev-type" value="1">Front End</input><br>
+        <input type="checkbox" name="dev-type" value="1">Back End</input><br>
+        <input type="checkbox" name="dev-type" value="1">Mobile App</input><br>
+        <input type="checkbox" name="dev-type" value="1">Desktop App</input><br>
+        <input type="checkbox" name="dev-type" value="1">AI Dev</input><br>
+        <input type="checkbox" name="dev-type" value="1">Scripting</input><br>
+        <input type="checkbox" name="dev-type" value="1">Other</input><br>
+        <input id="other-desc" type="text" name="other-desc" placeholder="if other please describe"></input>
+        </fieldset>
+
+        <label for="add-comments">Any additional details you would like to let us know?<textarea name="add-comments" placeholder="Enter your comments here..."></textarea></label>
+
+        <button type="submit" id="submit">Submit</button>
+      </form>
+    </main>
+  </body>
+</html>

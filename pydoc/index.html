@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css?family=Sarabun:400,700" rel="stylesheet">
+    <title>PyDoc</title>
+  </head>
+  <body>
+
+    <h1 id="mobile-header">PyDoc</h1>
+    <nav id="navbar">
+      <header>
+        <h1>PyDoc</h1>
+      </header>
+
+      <div><a class="nav-link" href="#introduction">Introduction</a></div>
+      <div><a class="nav-link" href="#what_you_should_already_know">What you should already know</a></div>
+      <div><a class="nav-link" href="#hello_world">Hello World</a></div>
+      <div><a class="nav-link" href="#variables">Variables</a></div>
+      <div><a class="nav-link" href="#declaring_variables">Declaring Variables</a></div>
+      <div><a class="nav-link" href="#variable_scope">Variable Scope</a></div>
+    </nav>
+
+    <main id="main-doc">
+      <section id="introduction" class="main-section">
+        <header>
+          <h2>Introduction</h2>
+        </header>
+
+        <p>
+            Python is a cross-platform, object-oriented programming language. It contains a standard library of objects, such as Array, Date, and Math, and a core set of language elements such as operators, control structures, and statements. Core Python can be extended for a variety of purposes by supplementing it with additional packages; for example:
+        </p>
+        <ul>
+          <li>The Requests library allows you to simply and effectively send HTTP requests with Python</li>
+          <li>The BeautifulSoup library allows you to easily parse through HTML code making webscraping much simpler</li>
+          <li>The Pillow library is a user friendly Python imaging library that allows you to easily work with images in Python</li>
+          <li>The NumPy adds some very advanced math functionalities to Python</li>
+          <li>The matplotlib library is an advanced numerical plotting library for Python, very useful for data science and data analysis</li>
+        </ul>
+      </section>
+
+      <section id="what_you_should_already_know" class="main-section">
+        <header>
+          <h2>What you should already know</h2>
+        </header>
+
+        <p>This guide assumes you have no previous knowledge besides a fluency with computers and the internet.</p>
+      </section>
+
+      <section id="hello_world" class="main-section">
+        <header>
+          <h2>Hello World</h2>
+        </header>
+
+        <p>To get started with writing Python, open IDLE and write your first "Hello world" Python code:</p>
+  <code>def hello_world():
+    print("Hello World!")
+
+  hello_world()
+  </code>
+        <p>Run the code and watch it unfold in the terminal!</p>
+      </section>
+
+      <section id="variables" class="main-section">
+        <header>
+          <h2>Variables</h2>
+        </header>
+
+        <p>
+          You use variables as symbolic names for values in your application. The names of variables, called identifiers, conform to certain rules.
+        </p>
+        <p>
+          A Python identifier must start with a letter or underscore (_) Subsequent characters can be letters, underscores, or numbers (0-9). Because Python is case sensitive, letters include the characters "A" through "Z" (uppercase) and the characters "a" through "z" (lowercase). There are some reserved words which you cannot use as a variable name because Python uses them for other things.
+        </p>
+        <p>
+          Some examples of legal names are _hits, temp99, name_of_something, and _name_name_name.
+        </p>
+      </section>
+
+      <section id="declaring_variables" class="main-section">
+        <header>
+          <h2>Declaring Variables</h2>
+        </header>
+
+        <p>The assignment statement creates new variables and gives them values. Basic assignment statement in Python is:</p>
+  <code>variable = value</code>
+        <p>Where the equal sign (=) is used to assign value (right side) to a variable name (left side). See the following statements:</p>
+  <code>item_name = "computer"
+  item_qty = 10
+  item_value = 1000.23
+  is_item_broken = false
+  </code>
+      </section>
+
+      <section id="variable_scope" class="main-section">
+        <header>
+          <h2>Variable Scope</h2>
+        </header>
+
+        <p>
+          When you declare a variable outside of any function, it is called a global variable, because it is available to any other code in the current document. When you declare a variable within a function, it is called a local variable, because it is available only within that function.
+        </p>
+        <p>The following would work correctly when run:</p>
+  <code>def add_numbers():
+    x = 10
+    y = 10
+
+    print(x + y)
+  </code>
+        <p>Because all the variables are within scope. The next example however would not run correctly because the varibles x and y are out of scope.</p>
+  <code>def numbers():
+    x = 10
+    y = 10
+
+  print(x + y)
+  </code>
+        <p>Since x and y were declared within the function, that function is the only thing that has access to them. When we try to reference the variables outside of the function, it doesn't work.</p>
+      </section>
+    </main>
+  </body>
+</html>

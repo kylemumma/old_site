@@ -1,0 +1,88 @@
+body, html {
+  font-family: "Sarabun", sans-serif;
+  scroll-behavior: smooth;
+}
+
+#mobile-header {
+  text-align: center;
+  display: none;
+}
+
+#main-doc {
+  margin-left: 260px;
+}
+
+.main-section p, ul {
+  margin-left: 20px;
+}
+
+.main-section code {
+  display: block;
+
+  white-space: pre;
+  background-color: #eee;
+  line-height: 2;
+  margin-left: 20px;
+  padding: 15px;
+}
+
+#navbar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 250px;
+  height: 100%;
+  border-right: 2px solid grey;
+  overflow: auto;
+}
+
+#navbar header {
+  margin-top: -15px;
+  text-align: center;
+  font-size: 22px;
+}
+
+#navbar div {
+  padding: 10px 0 10px 20px;
+  border-bottom: 1px solid grey;
+}
+
+#navbar div:first-of-type {
+  border-top: 1px solid grey;
+}
+
+#navbar a {
+  text-decoration: none;
+  color: black;
+}
+
+@media(max-width: 750px){
+  #mobile-header {
+    display: block;
+  }
+
+  #navbar{
+    display: block;
+    position: relative;
+    height: 200px;
+    width: 90%;
+    margin: 0 auto;
+    border-bottom: 2px solid black;
+  }
+
+  #navbar header {
+    display: none;
+  }
+
+  #navbar div {
+    border-left: 2px solid black;
+  }
+
+  #navbar div:first-of-type {
+    border-top: 2px solid black;
+  }
+
+  #main-doc {
+    margin-left: 0;
+  }
+}

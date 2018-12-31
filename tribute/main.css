@@ -1,0 +1,56 @@
+#main {
+  font-family: sans-serif;
+  text-align: center;
+  background-color: lightgrey;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+footer {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+h1 + h2 {
+  font-weight: normal;
+  font-size: 20px;
+  margin-top: -10px;
+}
+
+#img-div {
+  text-align: center;
+  background-color: white;
+  margin: 15px;
+  padding: 5px;
+}
+
+#image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: auto;
+}
+
+#img-caption {
+  padding: 0 20px;
+}
+
+#tribute-info {
+  text-align: left;
+  width: 600px;
+  margin: 0 auto;
+}
+
+#tribute-info p {
+  font-size: 18px;
+}
+
+#quote {
+  text-align: center;
+  font-style: italic;
+  font-size: 18px;
+}
+
+#read-more {
+  font-size: 19px;
+}
