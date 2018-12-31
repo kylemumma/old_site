@@ -15,9 +15,17 @@
 /* Styles for the Page Body */
 body {
   background: black url(bike_bg.png) top left no-repeat;
+  position: relative;
   width: 95%;
   min-width: 1000px;
   max-width: 1400px;
+}
+
+/* Styles for the Page Header*/
+header {
+  position: absolute;
+  top: 20px;
+  left: 20px;
 }
 
 /* General Navigation List Style */
@@ -107,4 +115,124 @@ nav.verticalNAV a:hover {
   background-color: rgba(255, 255, 255, 0.3);
 }
 
+/* Story section styles */
 
+#story {
+  background-color: gray;
+  background-color: rgba(255, 255, 255, 0.8);
+  clear: left;
+  float: left;
+  margin: 20px 0px 0px 33%;
+  width: 66%;
+}
+
+/* Article styles */
+
+#story article {
+  border-right: 1px solid black;
+  float: left;
+  width: 50%;
+}
+
+#story article hgroup {
+  background: rgb(97, 30, 2) url(rawlings.png) bottom right no-repeat;
+  
+   -o-background-size: contain;
+  -moz-background-size: contain;
+  -webkit-background-size: contain;
+  background-size: contain;
+  
+  color: rgb(145, 98, 78);
+  color: rgba(255, 255, 255, 0.3);
+  
+  height: 90px;
+  text-indent: 10px;
+}
+
+#story article hgroup h1 {
+  font-size: 158%;
+  letter-spacing: 3px;
+}
+
+#story article hgroup h2 {
+  font-size: 105%;
+}
+
+#story article p {
+  font-size: 80%;
+  margin: 10px;
+}
+
+#story article ul li {
+  font-size: 80%;
+  margin: 15px 25px;
+}
+
+#story article ul li strong {
+ font-weight: bold;
+}
+
+/* Figure box styles */
+
+#story figure {
+  float: left;
+  width: 49%;
+}
+
+#story figure img {
+  border: 5px inset rgb(227, 168, 145);
+  display: block;
+  margin: 30px auto 10px;
+  width: 80%;
+}
+
+#story figure figcaption {
+  font-size: 75%;
+  font-style: italic;
+  text-align: center;
+}
+
+/* Sidebar styles */
+aside {
+  color: rgb(145, 98, 78);
+  
+  position: absolute;
+  top: 400px;
+  left: 10px;
+  
+  width: 30%;
+  height: 450px;
+  overflow: auto;
+}
+
+aside h1 {
+  font-size: 105%;
+  font-weight: bold;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+aside h2 {
+  font-size: 85%;
+  font-weight: bold;
+}
+
+aside p {
+  font-size: 75%;
+  margin: 15px;
+}
+
+/* Page footer styles */
+footer {
+  clear: left;
+  margin-left: 33%;
+  width: 66%;
+}
+
+footer address {
+  color: rgb(182, 182, 92);
+  font-size: 80%;
+  font-style: normal;
+  padding-top: 10px;
+  text-align: center;
+}
