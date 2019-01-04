@@ -3,6 +3,7 @@ body, html {
   font-family: sans-serif;
   min-width: 700px;
   min-height: 650px;
+  overflow: auto;
 }
 
 .bg {
@@ -11,6 +12,7 @@ body, html {
   background-position: center;
   background-size: cover;
   overflow: hidden;
+  margin: 0;
 }
 
 /*logo styles*/
@@ -24,6 +26,7 @@ body, html {
   font-weight: bold;
   padding: 5px;
   border-radius: 10px;
+  margin: 10px;
 }
 
 .logo-text {
@@ -38,6 +41,7 @@ body, html {
 /*Nav Bar Styles*/
 .nav-bar {
   margin-top: 20px;
+  margin-right: 5px;
   width: 60%;
   height: auto;
   transform: translate(0, 5px);
@@ -79,7 +83,7 @@ body, html {
 }
 
 .motto img {
-  margin-top: 40px;
+  margin-top: 20px;
   transform: scale(.85);
 }
 
@@ -88,7 +92,7 @@ body, html {
   position: relative;
   text-align: center;
   margin-top: 20px;
-  height: 32%;
+  height: 30%;
   background-image: url("imgs/snowfall.gif");
 }
 
@@ -131,4 +135,21 @@ body, html {
 
 .about-div a {
   transform: translate(-78px, 0);
+}
+
+footer {
+  position: absolute;
+  text-align: center;
+  font-weight: 600;
+  font-variant: small-caps;
+  bottom: 0;
+  left: 0;
+	height: 60px;
+	width: 100%;
+	margin: 20px auto 0 auto;
+	background-color: #ddd;
+}
+
+footer p {
+  padding-top: 7px;
 }
