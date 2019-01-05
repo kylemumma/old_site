@@ -1,10 +1,12 @@
 body, html {
   background-color: rgb(240, 240, 240);
+  margin: 0;
+  padding: 0;
 }
 
 /*Nav bar*/
 .nav-bar {
-  border: 1px solid black;
+  border: 2px solid black;
 }
 
 /*All items div*/
@@ -40,4 +42,16 @@ body, html {
 
 .item-div img {
   height: 60%;
+}
+
+footer {
+  position: static;
+	height: 60px;
+	width: 100%;
+	margin: 20px auto 0 auto;
+	background-color: #ddd;
+}
+
+footer p {
+  padding-top: 22px;
 }
