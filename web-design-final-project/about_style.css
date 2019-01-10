@@ -1,0 +1,57 @@
+body, html {
+  background-color: #eee;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+/*header styles*/
+
+header {
+  text-align: center;
+  margin-top: 130px;
+  margin-bottom: 30px;
+}
+
+/*main styles*/
+
+main {
+  font-family: 'PT Sans', sans-serif;
+  background-color: #fff;
+  min-height: 720px;
+  padding: 0 10px 10px 30px;
+}
+
+h1 {
+  font-size: 45px;
+  font-variant: small-caps;
+  font-weight: bold;
+}
+
+img {
+  margin-left: 10px;
+  width: 500px;
+  height: auto;
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 5px;
+}
+
+main p {
+  font-size: 20px;
+  margin-left: 20px;
+}
+
+/*footer styles*/
+
+footer {
+  position: static;
+	height: 60px;
+	width: 100%;
+	background-color: #ddd;
+	margin-top: -20px;
+}
+
+footer p {
+  padding-top: 22px;
+}
