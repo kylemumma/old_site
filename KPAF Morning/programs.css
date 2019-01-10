@@ -1,0 +1,94 @@
+/*
+   New Perspectives on HTML and CSS
+   Tutorial 5
+   Review Assignment
+
+   Programming Table Style Sheet
+   Author:
+   Date:
+
+   Filename:         programs.css
+   Supporting Files:
+
+*/
+
+table {
+  border: 2px solid black;
+  border-collapse: collapse;
+  font-family: Arial, Verdana, sans-serif;
+  width: 100%;
+}
+
+/*Styles for the table caption*/
+table caption{
+  caption-side: bottom;
+  text-align:left;
+  font-size: 0.8em;
+}
+
+/*Table Body Styles*/
+
+table td {
+  font-size: 0.7em;
+  padding: 2px;
+  vertical-align: top;
+  border: 1px solid grey;
+}
+
+table tr {
+  height: 25px;
+}
+
+/*Table header styles*/
+table thead th {
+  font-size: 0.7em;
+  border: 1px solid grey;
+}
+
+table thead th:first-of-type {
+  background-color: rgb(153, 86, 7);
+}
+
+table thead th:nth-of-type(7),  table thead th:nth-of-type(8){
+  background-color: rgb(153, 0, 153);
+
+}
+
+table thead tr {
+  color: white;
+  background-color: rgb(105, 177, 60);
+}
+
+table col.timeColumn {
+  width: 10%;
+  background-color: rgb(215, 205, 151);
+}
+
+table tbody th {
+  border: 1px solid grey;
+}
+
+table col.wDayColumns {
+  width: 11%;
+  background-color: rgb(236, 255, 211);
+}
+
+table col.wEndColumns {
+  width: 10%;
+  background-color: rgb(255, 231, 255);
+}
+
+/*Three column layout for the introductory paragraph*/
+#intro p {
+  -moz-column-count: 3;
+  -webkit-column-count: 3;
+  column-count: 3;
+
+  -moz-column-gap: 20px;
+  -webkit-column-gap: 20px;
+  column-gap: 20px;
+
+  -moz-column-rule: 1px solid black;
+  -webkit-column-rule: 1px solid black;
+  column-rule: 1px solid black;
+}
