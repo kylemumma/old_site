@@ -9,7 +9,11 @@ body, html {
 
 header {
   text-align: center;
+<<<<<<< HEAD
+  margin-top: 160px;
+=======
   margin-top: 130px;
+>>>>>>> 551b0aa3223a67c991e859d585a2edf287f67fff
   margin-bottom: 30px;
 }
 
@@ -17,7 +21,11 @@ header {
 
 main {
   font-family: 'PT Sans', sans-serif;
+<<<<<<< HEAD
+  background-color: white;
+=======
   background-color: #fff;
+>>>>>>> 551b0aa3223a67c991e859d585a2edf287f67fff
   min-height: 720px;
   padding: 0 10px 10px 30px;
 }
