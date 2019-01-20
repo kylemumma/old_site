@@ -176,8 +176,9 @@ header h1 {
   }
 
   header {
-    background-size: auto 100%;
-    background-position: left;
+    background-size: auto 160%;
+    background-attachment: scroll;
+    background-position: top left;
   }
 
 }
