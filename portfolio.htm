@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <link href="https://fonts.googleapis.com/css?family=Sarabun:400" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="portfolio-styles.css">
+    <link rel="stylesheet" href="assets/css/portfolio-styles.css">
     <title>Kyle Mumma - Portfolio</title>
   </head>
   <body>
@@ -19,7 +19,7 @@
       <nav class="mobile-nav-bar">
         <label for="toggle">&#9776;</label>
         <a href="index.htm" class="main-logo">Kyle Mumma</a>
-        <input type="checkbox" id="toggle" onclick="hideMain()">
+        <input type="checkbox" id="toggle" onclick="hideHeader()">
 
         <div class="menu-links">
           <a href="portfolio.htm" target="_self" title="Selected Projects">Portfolio</a><br>
@@ -35,52 +35,65 @@
 
       <section id="portfolio-grid">
         <div class="project-tile">
-          <a href="tribute/index.html"><img src="https://codepen.io/kylemumma/pen/aPmyJj/image/small"/></a>
+          <a href="external-sites/tribute/index.html"><img src="https://codepen.io/kylemumma/pen/aPmyJj/image/small"/></a>
           <p>John Muir</p>
         </div>
         <div class="project-tile">
-          <a href="survey/index.html"><img src="https://codepen.io/kylemumma/pen/LMjNdd/image/large"/></a>
+          <a href="external-sites/survey/index.html"><img src="https://codepen.io/kylemumma/pen/LMjNdd/image/large"/></a>
           <p>Programming Survey</p>
         </div>
         <div class="project-tile">
-          <a href="landing-page/index.html"><img src="https://codepen.io/kylemumma/pen/WLEqOG/image/large"/></a>
+          <a href="external-sites/landing-page/index.html"><img src="https://codepen.io/kylemumma/pen/WLEqOG/image/large"/></a>
           <p>Gossamer Gear</p>
         </div>
         <div class="project-tile">
-          <a href="pydoc/index.html"><img src="https://codepen.io/kylemumma/pen/bOoXNg/image/small"/></a>
+          <a href="external-sites/pydoc/index.html"><img src="https://codepen.io/kylemumma/pen/bOoXNg/image/small"/></a>
           <p>PyDoc</p>
         </div>
         <div class="project-tile">
-          <a href="web-design-final-project/index.htm"><img src="web-design-final-project.png"/></a>
+          <a href="external-sites/web-design-final-project/index.htm"><img src="assets/images/web-design-final-project.png"/></a>
           <p>Outfoor Retailers</p>
         </div>
         <div class="project-tile">
-          <a href="ikiiki-sushi/index.htm"><img src="ikiiki-sushi.png"/></a>
+          <a href="external-sites/ikiiki-sushi/index.htm"><img src="assets/images/ikiiki-sushi.png"/></a>
           <p>Ikiiki Sushi</p>
         </div>
         <div class="project-tile">
-          <a href="mock-portfolio/index.html"><img src="mock-portfolio.png"/></a>
+          <a href="external-sites/mock-portfolio/index.html"><img src="assets/images/mock-portfolio.png"/></a>
           <p>Mock Portfolio</p>
         </div>
         <div class="project-tile">
-          <a href="cycle-pathology/index.htm"><img src="cycle-pathology.png"/></a>
+          <a href="external-sites/cycle-pathology/index.htm"><img src="assets/images/cycle-pathology.png"/></a>
           <p>Cycle Pathology</p>
         </div>
         <div class="project-tile">
-          <a href="basic-stick/index.htm"><img src="basic-stick.png"/></a>
+          <a href="external-sites/basic-stick/index.htm"><img src="assets/images/basic-stick.png"/></a>
           <p>Basic Stick</p>
         </div>
         <div class="project-tile">
-          <a href="jprop/index.htm"><img src="jprop.png"/></a>
+          <a href="external-sites/jprop/index.htm"><img src="assets/images/jprop.png"/></a>
           <p>JProp</p>
         </div>
         <div class="project-tile">
-          <a href="math-high/index.htm"><img src="math-high.png"/></a>
+          <a href="external-sites/math-high/index.htm"><img src="assets/images/math-high.png"/></a>
           <p>Math High</p>
         </div>
       </section>
 
       <h2>To view more of my non-web projects visit <a href="https://github.com/kylemumma" target="_blank">my github</a></h2>
     </main>
+
+    <script>
+      function hideHeader(){
+        var checkbox = document.getElementById('toggle');
+        var headerContent = document.getElementsByTagName('h1')[0];
+
+        if(checkbox.checked){
+          headerContent.style.display = "none";
+        } else {
+          headerContent.style.display = "block";
+        }
+      }
+    </script>
   </body>
 </html>
