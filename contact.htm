@@ -2,32 +2,55 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Sarabun:400" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/portfolio-styles.css">
     <link rel="stylesheet" href="assets/css/contact-styles.css">
     <title>Kyle Mumma - Contact</title>
   </head>
   <body>
-    <nav class="nav-bar">
-      <a href="portfolio.htm" target="_self" title="Selected Projects">Portfolio</a>
-      <a href="index.htm" class="main-logo" title="Home">Kyle Mumma</a>
-      <a href="#" title="Contact">Contact</a>
-    </nav>
 
-    <nav class="mobile-nav-bar">
-      <label for="toggle">&#9776;</label>
-      <a href="index.htm" class="main-logo">Kyle Mumma</a>
-      <input type="checkbox" id="toggle" onclick="hideMain()">
+    <header>
+      <nav class="nav-bar">
+        <a href="portfolio.htm" target="_self" title="Selected Projects">Portfolio</a>
+        <a href="index.htm" class="main-logo" title="Home">Kyle Mumma</a>
+        <a href="contact.htm" title="Contact">Contact</a>
+      </nav>
 
-      <div class="menu-links">
-        <a href="portfolio.htm" target="_self" title="Selected Projects">Portfolio</a><br>
-        <a href="#" title="Contact">Contact</a>
-      </div>
-    </nav>
+      <nav class="mobile-nav-bar">
+        <label for="toggle">&#9776;</label>
+        <a href="index.htm" class="main-logo">Kyle Mumma</a>
+        <input type="checkbox" id="toggle" onclick="hideHeader()">
+
+        <div class="menu-links">
+          <a href="portfolio.htm" target="_self" title="Selected Projects">Portfolio</a><br>
+          <a href="contact.htm" title="Contact">Contact</a>
+        </div>
+      </nav>
+
+      <h1>Contact</h1>
+    </header>
 
     <main>
-      <h1>This page is currently under construction</h1>
-      <h2>Check back in later for updates</h2>
+      <h2><i class="fas fa-exclamation-triangle"></i> This page is under construction <i class="fas fa-exclamation-triangle"></i></h2>
+      <h2>Kyle Mumma</h2>
+      <h2><i class="fas fa-map-marker-alt"></i> Seattle, WA</h2>
+      <h2><i class="fas fa-envelope"></i> kyle.mumma@live.com</h2>
+      <h2><a href="https://github.com/kylemumma" target="_blank"><i class="fab fa-github"></i></a><a href="assets/other/resume.pdf" target="_blank"><i class="fas fa-file"></i></a><a href="https://www.instagram.com/kylemummacodes/" target="_blank"><i class="fab fa-instagram"></i></a></h2>
     </main>
+
+    <script>
+      function hideHeader(){
+        var checkbox = document.getElementById('toggle');
+        var headerContent = document.getElementsByTagName('h1')[0];
+
+        if(checkbox.checked){
+          headerContent.style.display = "none";
+        } else {
+          headerContent.style.display = "block";
+        }
+      }
+    </script>
   </body>
 </html>
