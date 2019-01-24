@@ -2,7 +2,7 @@ body, html {
   font-family: "Muli", sans-serif;
   text-align: center;
 
-  background-color: #eee;
+  background-color: white;
 
   height: 100vh;
 
@@ -185,4 +185,28 @@ header h1 {
 h2 {
   color: black;
   margin: 40px 0;
+}
+
+.related-list li {
+  font-size: 24px;
+  line-height: 3;
+}
+
+.related-list li a {
+  background-color: #496d96;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 30px;
+  transition: 0.4s ease;
+}
+
+.related-list li a:hover {
+  background-color: #003366;
+}
+
+@media only screen and (max-width: 550px){
+  .hide-on-small {
+    display: none;
+  }
 }
