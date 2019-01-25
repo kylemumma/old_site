@@ -50,13 +50,13 @@ header h1 {
   width: 400px;
   height: auto;
   background-color: white;
+  margin-left: -20px;
 }
 
 .project-tile img {
   width: 400px;
   height: auto;
   border-bottom: 2px solid lightblue;
-  margin-bottom: 0;
 }
 
 .project-tile p {
@@ -187,12 +187,17 @@ h2 {
   margin: 40px 0;
 }
 
-.related-list li {
+.button-list {
+  padding: 0;
+  list-style-type: none;
+}
+
+.button-list li {
   font-size: 24px;
   line-height: 3;
 }
 
-.related-list li a {
+.button-list li a {
   background-color: #496d96;
   color: white;
   text-decoration: none;
@@ -201,7 +206,7 @@ h2 {
   transition: 0.4s ease;
 }
 
-.related-list li a:hover {
+.button-list li a:hover {
   background-color: #003366;
 }
 
