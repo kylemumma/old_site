@@ -28,3 +28,38 @@ h2 a {
 h2 a:hover {
   color: darkblue;
 }
+
+h2 {
+  font-size: 26px;
+}
+
+#name {
+  font-size: 38px;
+  font-weight: bold;
+}
+
+.full-width-flex {
+  display: flex;
+  width: 90%;
+  justify-content: center;
+  align-items: center;
+  align-content: space-between;
+}
+
+#left-flex-div {
+  flex: 2 2 100px;
+}
+
+#right-flex-div {
+  flex: 1 1 50px;
+}
+
+@media(max-width: 550px){
+  .full-width-flex {
+    display: inline;
+  }
+
+  .btn-block {
+    width: 90%;
+  }
+}
