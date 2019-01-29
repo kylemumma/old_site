@@ -11,6 +11,8 @@ body, html {
 
   margin: 0;
   padding: 0;
+
+  padding-bottom: 50px;
 }
 
 header {
@@ -95,18 +97,18 @@ header h1 {
 }
 
 .mobile-nav-bar {
-  display: block;
-  padding: 5px 0;
+  display: block ;
+  padding: 5px 0 ;
 
-  min-height: 70px;
+  min-height: 70px ;
 }
 
 .main-logo {
-  color: white;
+  color: white !important;
   font-size: 2em;
   font-weight: 400;
   margin: 0 20px;
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 .mobile-nav-bar .main-logo {

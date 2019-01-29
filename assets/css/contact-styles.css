@@ -1,6 +1,8 @@
 body, html {
   background-image: none;
   background-color: #eee;
+
+  padding-bottom: 50px;
 }
 
 header {
@@ -61,5 +63,9 @@ h2 {
 
   .btn-block {
     width: 90%;
+  }
+
+  #toggle:checked + .menu-links {
+    display: block !important;
   }
 }
