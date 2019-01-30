@@ -71,8 +71,8 @@ h2 {
     display: block !important;
   }
 
-  html {
-    padding-bottom: 50px !important;
+  body, html {
+    margin-bottom: 50px !important;
   }
 }
 

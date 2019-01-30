@@ -182,8 +182,8 @@ header h1 {
     background-attachment: scroll;
   }
 
-  html {
-    padding-bottom: 50px !important;
+  body, html {
+    margin-bottom: 50px !important;
   }
 
 }
