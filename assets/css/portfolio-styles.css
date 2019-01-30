@@ -20,7 +20,7 @@ header {
   background-image: url("../images/shore.jpg");
   height: 400px;
 
-  background-size: cover;
+  background-size: cover !important;
   background-attachment: fixed;
   background-position: top left;
 
@@ -97,7 +97,7 @@ header h1 {
 }
 
 .mobile-nav-bar {
-  display: block ;
+  display: block !important;
   padding: 5px 0 ;
 
   min-height: 70px ;
@@ -152,7 +152,7 @@ header h1 {
 
 @media only screen and (min-width:550px){
   .mobile-nav-bar {
-    display: none;
+    display: none !important;
   }
 }
 
@@ -180,6 +180,10 @@ header h1 {
   header {
     background-size: auto 190%;
     background-attachment: scroll;
+  }
+
+  html {
+    padding-bottom: 50px !important;
   }
 
 }

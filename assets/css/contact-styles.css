@@ -7,12 +7,12 @@ body, html {
 
 header {
   background-image: url("../images/contact-header-img.jpg");
-  background-size: contain;
+  background-size: contain !important;
 }
 
 @media(max-width: 1080px){
   header{
-    background-size: auto 400px;
+    background-size: auto 400px !important;
   }
 }
 
@@ -32,7 +32,8 @@ h2 a:hover {
 }
 
 h2 {
-  font-size: 26px;
+  font-size: 24px;
+  font-weight: normal;
 }
 
 #name {
@@ -56,16 +57,38 @@ h2 {
   flex: 1 1 50px;
 }
 
+
 @media(max-width: 550px){
   .full-width-flex {
     display: inline;
   }
 
-  .btn-block {
-    width: 90%;
+  a.outline-button-dark {
+    width: 80% !important;
   }
 
   #toggle:checked + .menu-links {
     display: block !important;
   }
+
+  html {
+    padding-bottom: 50px !important;
+  }
+}
+
+a.outline-button-dark {
+  display: inline-block;
+  border-radius: 5px;
+  background-color: transparent;
+  border: 1px solid #444;
+  color: #444;
+  font-size: 20px;
+  text-decoration: none;
+  width: 100%;
+  padding: 10px 0;
+}
+
+a.outline-button-dark:hover {
+  background-color: #444;
+  color: white;
 }
