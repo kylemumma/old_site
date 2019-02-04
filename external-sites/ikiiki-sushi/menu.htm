@@ -3,10 +3,10 @@
   <head>
     <meta charset="utf-8">
     <title>Ikiiki Sushi</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500" rel="stylesheet">
     <link rel="stylesheet" href="index_style.css">
     <link rel="stylesheet" href="locations_style.css">
     <link rel="stylesheet" href="menu_style.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500" rel="stylesheet">
   </head>
   <body>
     <nav id="navbar">
@@ -24,18 +24,24 @@
       <h1>Menu</h1>
     </header>
 
-    <nav>
-      <button onClick="appetizersClicked()">Appetizers</button>
-      <button onClick="noodlesClicked()">Noodles</button>
-      <button onClick="entreesClicked()">Entrees</button>
-      <button onClick="friedRiceClicked()">Fried Rice</button>
-      <button onClick="sushiComboClicked()">Sushi Combo</button>
-      <button onClick="sushiSashimiClicked()">Sushi & Sashimi</button>
-      <button onClick="traditionalMakiClicked()">Traditional Maki</button>
-      <button onClick="signatureMakiClicked()">Signature Maki</button>
-      <button onClick="sideOrderClicked()">Side Order</button>
-      <button onClick="dessertClicked()">Dessert</button>
-      <button onClick="beveragesClicked()">Beverages</button>
+    <nav class="food-sections" id="four">
+      <a href="#" class="button" onClick="appetizersClicked()">Appetizers</a>
+      <a href="#" class="button" onClick="noodlesClicked()">Noodles</a>
+      <a href="#" class="button" onClick="entreesClicked()">Entrees</a>
+      <a href="#" class="button" onClick="friedRiceClicked()">Fried Rice</a>
+    </nav>
+
+    <nav class="food-sections" id="four">
+      <a href="#" class="button" onClick="sushiComboClicked()">Sushi Combo</a>
+      <a href="#" class="button" onClick="sushiSashimiClicked()">Sushi & Sashimi</a>
+      <a href="#" class="button" onClick="traditionalMakiClicked()">Traditional Maki</a>
+      <a href="#" class="button" onClick="signatureMakiClicked()">Signature Maki</a>
+    </nav>
+
+    <nav class="food-sections" id="three">
+      <a href="#" class="button" onClick="sideOrderClicked()">Side Order</button>
+      <a href="#" class="button" onClick="dessertClicked()">Dessert</a>
+      <a href="#" class="button" onClick="beveragesClicked()">Beverages</a>
     </nav>
 
     <main>

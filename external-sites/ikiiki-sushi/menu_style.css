@@ -9,6 +9,7 @@ main {
 header {
   background-image: url("images/bg-img3.jpg");
   background-position: center;
+  margin-bottom: 15px;
 }
 
 #category-div {
@@ -62,4 +63,29 @@ h2 {
   margin: 10px auto 10px auto;
   border-bottom: 2px solid firebrick;
   padding: 0 10px;
+}
+
+.food-sections {
+  width: 100%; /* Full-width */
+  overflow: auto; /* Overflow due to float */
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.food-sections a {
+  flex: 1;
+  text-align: center; /* Center-align text */
+  padding: 5px 0; /* Some top and bottom padding */
+  transition: all 0.3s ease; /* Add transition for hover effects */
+  color: #444; /* White text color */
+  font-size: 20px; /* Increased font size */
+  text-decoration: none;
+  border: 1px solid #444;
+  margin: 0 4px;
+}
+
+.food-sections a:hover {
+  background-color: #444; /* Add a hover color */
+  color: white;
 }

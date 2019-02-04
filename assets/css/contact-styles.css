@@ -43,24 +43,30 @@ h2 {
 
 .full-width-flex {
   display: flex;
-  width: 90%;
+  width: 80%;
+  margin: 0 auto;
   justify-content: center;
   align-items: center;
   align-content: space-between;
 }
 
 #left-flex-div {
-  flex: 2 2 100px;
+  flex: 1 1 100px;
+  text-align:left;
 }
 
 #right-flex-div {
-  flex: 1 1 50px;
+  flex: 1 1 100px;
 }
 
 
-@media(max-width: 550px){
+@media(max-width: 800px){
   .full-width-flex {
-    display: inline;
+    display: block;
+  }
+
+  #left-flex-div {
+    text-align: center;
   }
 
   a.outline-button-dark {
