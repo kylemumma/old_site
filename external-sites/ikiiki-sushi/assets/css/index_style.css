@@ -8,8 +8,9 @@ body, html {
 }
 
 main {
+  overflow: hidden;
   margin-top: 0;
-  background-image: url("images/bg-img1.jpg");
+  background-image: url("../images/bg-img1.jpg");
   height: 90vh;
 
   background-position: center;
@@ -39,8 +40,8 @@ main {
 
 .em-button {
   display: inline-block;
-  background-color: deepskyblue;
-  color: white !important;
+  background-color: white;
+  color: #8A2BE2 !important;
   padding: 10px 20px;
   border-radius: 50px;
   text-decoration: none;
@@ -49,10 +50,12 @@ main {
   margin: 40vh auto;
   transition: ease .2s all;
   font-weight: 500;
+  border: 1px solid #8A2BE2;
 }
 
 .em-button:hover {
-  background-color: crimson;
+  background-color:	#8A2BE2;
+  color: white !important;
 }
 
 #nav-links {
@@ -75,4 +78,14 @@ main {
 #logo-img {
   padding: 2px;
   height: 70px;
+}
+
+#coupon-button {
+  color: #CC0000 !important;
+  border: 1px solid #CC0000;
+}
+
+#coupon-button:hover {
+  background-color: #CC0000;
+  color: white !important;
 }

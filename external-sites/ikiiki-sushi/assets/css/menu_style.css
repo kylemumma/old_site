@@ -11,7 +11,7 @@ main {
 }
 
 header {
-  background-image: url("images/bg-img3.jpg");
+  background-image: url("../images/bg-img3.jpg");
   background-position: center;
   margin-bottom: 15px;
 }
@@ -103,8 +103,8 @@ h2 {
   margin-bottom: 20px;
 }
 
-#menu-download {
+.menu-download {
   float: right;
-  margin: 20px 0;
+  margin: 10px 25px 20px 0;
   text-decoration: none;
 }
