@@ -1,5 +1,9 @@
+body, html {
+  height: auto;
+}
+
 main {
-  background-image: none;
+  overflow: visible;
 }
 
 @keyframes bg-change {
@@ -88,4 +92,19 @@ h2 {
 .food-sections a:hover {
   background-color: #444; /* Add a hover color */
   color: white;
+}
+
+#menu-container {
+  width: 95%;
+  margin: 0 auto;
+}
+
+#menu-pdf-viewer {
+  margin-bottom: 20px;
+}
+
+#menu-download {
+  float: right;
+  margin: 20px 0;
+  text-decoration: none;
 }
