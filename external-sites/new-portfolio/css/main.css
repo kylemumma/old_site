@@ -1,52 +1,107 @@
 /* General Styles */
 body, html {
-    scroll-behavior: smooth;
-    font-family: "Montserrat", sans-serif !important;
+  scroll-behavior: smooth;
+  font-family: "Montserrat", sans-serif !important;
 }
 
 .full-height {
-    height: 100vh;
+  height: 100vh;
 }
 
 .full-width {
-    width: 100%;
+  width: 100%;
 }
 
 .section-header {
-    font-weight: 600;
-    font-size: 40px;
+  font-weight: 600;
+  font-size: 40px;
+}
+
+.yellow {
+  color: #feda6a;
 }
 
 /* Landing Screen */
 #landing-screen {
-    color: white;
-    font-size: 32px;
-    background-color: #393f4d;
-    background-image: url(../images/extracolor5.png);
-    background-size: cover;
-}
-
-.yellow {
-    color: #feda6a;
+  color: white;
+  font-size: 32px;
+  background-color: #393f4d;
+  background-image: url(../images/extracolor5.png);
+  background-size: cover;
 }
 
 /* Skills Section */
 #skills {
-    background-color: white;
-    background-image: url(../images/skills-bg.png);
-    background-size: auto 100%;
-    background-repeat: no-repeat;
+  background-color: white;
+  background-image: url(../images/skills-bg.png);
+  background-size: auto 100%;
+  background-repeat: no-repeat;
 }
 
-#responsive-web-design-card, #front-end-frameworks-card, #technologies-card {
-    transition: 0.3s ease;
+#skills #responsive-web-design-card, #skills #front-end-frameworks-card, #skills #technologies-card {
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
 }
 
-.list-group-item {
-    transition: 0.15s ease;
+#skills .list-group-item {
+  -webkit-transition: 0.15s ease;
+  transition: 0.15s ease;
 }
 
 /* Projects Section */
 #projects {
-    background-color: #eee;
+  background-color: #eee;
 }
+
+#projects .row {
+  width: 80%;
+  margin: 0 auto;
+}
+
+#projects #gossamer-gear {
+  background-color: #eee;
+}
+
+#projects .project-square {
+  background-color: white;
+}
+
+#projects .project-square:hover .overlay {
+  opacity: 1;
+}
+
+#projects .project-square img {
+  width: 100%;
+  height: auto;
+}
+
+#projects .project-square .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  background-color: white;
+}
+
+#projects .project-square .text {
+  color: black;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+#projects .project-square .subtext {
+  color: #8968CD;
+  font-size: 16px;
+}
+/*# sourceMappingURL=main.css.map */
