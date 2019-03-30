@@ -23,11 +23,15 @@ body, html {
 
 /* Landing Screen */
 #landing-screen {
-  color: white;
-  font-size: 32px;
   background-color: #393f4d;
   background-image: url(../images/extracolor5.png);
   background-size: cover;
+}
+
+#landing-screen table {
+  color: white;
+  font-size: 32px;
+  margin: 0 10px;
 }
 
 /* Skills Section */
@@ -38,14 +42,22 @@ body, html {
   background-repeat: no-repeat;
 }
 
-#skills #responsive-web-design-card, #skills #front-end-frameworks-card, #skills #technologies-card {
+#skills .skill-card {
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
+}
+
+#skills .skill-card .fab {
+  font-size: 34px;
 }
 
 #skills .list-group-item {
   -webkit-transition: 0.15s ease;
   transition: 0.15s ease;
+}
+
+#skills #front-end-frameworks-card .card-title, #skills #technologies-card .card-title {
+  font-size: 26px;
 }
 
 /* Projects Section */
@@ -103,5 +115,41 @@ body, html {
 #projects .project-square .subtext {
   color: #8968CD;
   font-size: 16px;
+}
+
+/* Footer */
+#footer {
+  background-color: #393f4d;
+  margin-top: 50px;
+  padding: 35px 0;
+}
+
+#footer #icon-links-bar {
+  width: 500px;
+  display: block;
+  margin: 0 auto;
+}
+
+#footer #icon-links-bar .icon-link {
+  font-size: 26px;
+  margin: 0 15px;
+  background-color: #292d38;
+  color: white;
+  padding: 10px 15px;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+#footer #icon-links-bar .icon-link:hover {
+  background-color: #feda6a;
+  color: #393f4d;
+}
+
+@media (max-width: 767px) {
+  #footer #icon-links-bar .icon-link {
+    font-size: 18px;
+    margin: 0 10px;
+    padding: 5px 10px;
+  }
 }
 /*# sourceMappingURL=main.css.map */

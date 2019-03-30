@@ -38,4 +38,14 @@ $(document).ready(() => {
         $("#technologies-card").removeClass("bg-dark text-white");
         $("#technologies-card").children().children().children().removeClass("text-dark");
     });
+
+    //other languages card
+    //technologies card
+    $("#other-languages-card").hover(() => { //on enter
+        $("#other-languages-card").addClass("bg-dark text-white"); 
+        $("#other-languages-card").children().children().children().addClass("text-dark");
+    }, () => { //on exit
+        $("#other-languages-card").removeClass("bg-dark text-white");
+        $("#other-languages-card").children().children().children().removeClass("text-dark");
+    });
 });

@@ -1,7 +1,10 @@
 /* General Styles */
 $yellow: #feda6a;
 $dark: #393f4d;
+$darker: #292d38;
 $blue: #8968CD;
+
+$xs: 767px;
 
 body, html {
     scroll-behavior: smooth;
@@ -27,11 +30,15 @@ body, html {
 
 /* Landing Screen */
 #landing-screen {
-    color: white;
-    font-size: 32px;
     background-color: $dark;
     background-image: url(../images/extracolor5.png);
     background-size: cover;
+    
+    table {
+        color: white;
+        font-size: 32px;
+        margin: 0 10px;
+    }
 }
 
 /* Skills Section */
@@ -41,12 +48,22 @@ body, html {
     background-size: auto 100%;
     background-repeat: no-repeat;
 
-    #responsive-web-design-card, #front-end-frameworks-card, #technologies-card {
+    .skill-card {
         transition: 0.3s ease;
+
+        .fab {
+            font-size: 34px;
+        }
     }
 
     .list-group-item {
         transition: 0.15s ease;
+    }
+
+    #front-end-frameworks-card, #technologies-card {
+        .card-title {
+            font-size: 26px;
+        }
     }
 }
 
@@ -103,6 +120,39 @@ body, html {
         .subtext {
             color: $blue;
             font-size: 16px;
+        }
+    }
+}
+
+/* Footer */
+#footer {
+    background-color: $dark;
+    margin-top: 50px;
+    padding: 35px 0;
+
+    #icon-links-bar {
+        width: 500px;
+        display: block;
+        margin: 0 auto;
+
+        .icon-link {
+            font-size: 26px;
+            margin: 0 15px;
+            background-color: $darker;
+            color: white;
+            padding: 10px 15px;
+            transition: 0.3s ease;
+
+            &:hover {
+                background-color: $yellow;
+                color: $dark;
+            }
+
+            @media(max-width: $xs) {
+                font-size: 18px;
+                margin: 0 10px;
+                padding: 5px 10px;
+            }
         }
     }
 }
