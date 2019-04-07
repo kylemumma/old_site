@@ -1,0 +1,130 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Bonnie's Famous Vegan Diner</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <div class="orderhero">
+    <ul id="nav">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="orderOnline.html">Order Online</a></li>
+    </ul>
+  </div>
+
+  <table id="myTable">
+    <!–– Titles ––>
+      <tr>
+        <th>Order ID</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Chicken Sandwiches</th>
+        <th>Turkey Sandwiches</th>
+        <th>Pizzas</th>
+        <th>Burgers</th>
+        <th>Soy Milks</th>
+        <th>Vegan Waters</th>
+      </tr>
+  </table>
+
+  <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyA2nvvpKFTjz-dDfZC-Y8gbcWYvVPHyKZE",
+      authDomain: "bonnies-vegan-diner.firebaseapp.com",
+      databaseURL: "https://bonnies-vegan-diner.firebaseio.com",
+      projectId: "bonnies-vegan-diner",
+      storageBucket: "bonnies-vegan-diner.appspot.com",
+      messagingSenderId: "72452334401"
+    };
+    firebase.initializeApp(config);
+  </script>
+
+  <script>
+    var ref = firebase.database().ref().child("orders");
+    ref.on("value", gotData);
+
+    function gotData(data){
+      for(var x = document.getElementById("myTable").rows.length; x > 1; x--){
+        document.getElementById("myTable").deleteRow(x);
+      }
+
+      var orders = data.val();
+      var keys = Object.keys(orders);
+      var c = 0;
+      for(var i = 0; i < keys.length; i++){
+        var k = keys[i];
+        if(orders[k].orderStatus === ""){
+          var id = orders[k].idNumber;
+          var chickenSands = orders[k].chickenSandwich;
+          var turkeySands = orders[k].turkeySandwich;
+          var pizzas = orders[k].pizza;
+          var burgers = orders[k].burger;
+          var milks = orders[k].soyMilk;
+          var waters = orders[k].veganWater;
+          var firstName = orders[k].firstName;
+          var lastName = orders[k].lastName;
+
+          var table = document.getElementById("myTable");
+          var row = table.insertRow(c);
+          c++;
+
+          var cell1 = row.insertCell(0);
+          cell1.innerHTML = id;
+
+          var cell2 = row.insertCell(1);
+          cell2.innerHTML = firstName;
+
+          var cell3 = row.insertCell(2);
+          cell3.innerHTML = lastName;
+
+          var cell4 = row.insertCell(3);
+          cell4.innerHTML = chickenSands;
+
+          var cell5 = row.insertCell(4);
+          cell5.innerHTML = turkeySands;
+
+          var cell6 = row.insertCell(5);
+          cell6.innerHTML = pizzas;
+
+          var cell7 = row.insertCell(6);
+          cell7.innerHTML = burgers;
+
+          var cell8 = row.insertCell(7);
+          cell8.innerHTML = milks;
+
+          var cell9 = row.insertCell(8);
+          cell9.innerHTML = waters;
+        }
+      }
+    }
+  </script>
+
+  <div id="orderStatus">
+    <input id="orderIdentificationNumber" type:"text" placeholder="Order ID"/>
+    <button onclick="fulfilled()">Fulfilled</button>
+    <button onclick="cancelled()">Cancelled</button>
+  </div>
+
+  <script>
+    function fulfilled(){
+      var idNum = document.getElementById("orderIdentificationNumber").value;
+      var orderPath = firebase.database().ref().child("orders").child("orderid" + idNum);
+      orderPath.child("orderStatus").set("fulfilled");
+      location.reload();
+    }
+
+    function cancelled(){
+      var idNum = document.getElementById("orderIdentificationNumber").value;
+      var orderPath = firebase.database().ref().child("orders").child("orderid" + idNum);
+      orderPath.child("orderStatus").set("cancelled");
+      location.reload();
+    }
+  </script>
+  </body>
+
+</html>
