@@ -1,8 +1,9 @@
 /* General Styles */
-$yellow: #feda6a;
+$yellow: #b7a57a;
 $dark: #393f4d;
 $darker: #292d38;
 $blue: #8968CD;
+$purple: #4b2e83;
 
 $xs: 576px;
 
@@ -25,6 +26,10 @@ body, html {
 }
 
 .yellow {
+    color: $yellow;
+}
+
+.yellow:hover {
     color: $yellow;
 }
 

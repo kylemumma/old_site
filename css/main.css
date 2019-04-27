@@ -21,6 +21,10 @@ body, html {
   color: #feda6a;
 }
 
+.yellow:hover {
+  color: #feda6a;
+}
+
 /* Landing Screen */
 #landing-screen {
   background-color: #393f4d;
