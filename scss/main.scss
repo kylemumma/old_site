@@ -1,9 +1,10 @@
 /* General Styles */
-$yellow: #b7a57a;
+$yellow: #feda6a;
 $dark: #393f4d;
 $darker: #292d38;
 $blue: #8968CD;
 $purple: #4b2e83;
+$gold: #b7a57a;
 
 $xs: 576px;
 
@@ -27,10 +28,14 @@ body, html {
 
 .yellow {
     color: $yellow;
+
+    &:hover {
+        color: $yellow;
+    }
 }
 
-.yellow:hover {
-    color: $yellow;
+.dub-link {
+    text-decoration: underline;
 }
 
 /* Landing Screen */

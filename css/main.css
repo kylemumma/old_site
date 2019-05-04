@@ -25,6 +25,10 @@ body, html {
   color: #feda6a;
 }
 
+.dub-link {
+  text-decoration: underline;
+}
+
 /* Landing Screen */
 #landing-screen {
   background-color: #393f4d;
