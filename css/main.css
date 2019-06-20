@@ -2,6 +2,7 @@
 body, html {
   scroll-behavior: smooth;
   font-family: "Montserrat", sans-serif !important;
+  overflow-x: hidden;
 }
 
 .full-height {
@@ -25,21 +26,33 @@ body, html {
   color: #feda6a;
 }
 
-.dub-link {
+.yellow-link {
+  color: #feda6a;
   text-decoration: underline;
+}
+
+.yellow-link:hover {
+  color: #feda6a;
+  text-decoration: none;
 }
 
 /* Landing Screen */
 #landing-screen {
   background-color: #393f4d;
-  background-image: url(../images/extracolor5.png);
+  background-image: url(../images/me2.jpg);
   background-size: cover;
   padding: 0 10px;
 }
 
+.tinted-overlay {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(0, 0, 0, 0.4);
+}
+
 #landing-screen table {
-  color: white;
-  font-size: 32px;
+  color:white;
+  font-size: 24px;
 }
 
 /* Skills Section */
