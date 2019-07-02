@@ -44,15 +44,54 @@ body, html {
   padding: 0 10px;
 }
 
-.tinted-overlay {
-  width: 100vw;
-  height: 100vh;
-  background-color: rgb(0, 0, 0, 0.4);
+#landing-screen table {
+  color: white;
+  font-size: 32px;
 }
 
-#landing-screen table {
-  color:white;
-  font-size: 24px;
+#landing-screen .tinted-overlay {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+#landing-screen #nav-bar {
+  position: absolute;
+  top: 15px;
+  left: 0px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: middle;
+      -ms-flex-align: middle;
+          align-items: middle;
+}
+
+#landing-screen #nav-bar .nav-link {
+  color: white;
+  border: 1px solid white;
+  border-radius: 5px;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+#landing-screen #nav-bar .nav-link:hover {
+  color: #feda6a;
+  background-color: transparent;
+  border-color: #feda6a;
+}
+
+#landing-screen #nav-bar .nav-link-icon {
+  border: none;
+  font-size: 34px;
+}
+
+#landing-screen #nav-bar .nav-link-icon:hover {
+  color: #feda6a;
+  background-color: transparent;
 }
 
 /* Skills Section */
