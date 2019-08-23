@@ -9,11 +9,17 @@ fetch('https://crudpi.io/c4989d/posts')
             const div = document.createElement('div');
             div.id = 'post'
 
-            const row = document.createElement('div');
-            row.className = 'row container';
+            const row1 = document.createElement('div');
+            row1.className = 'row container';
 
-            const col = document.createElement('div');
-            col.className = 'col';
+            const row2 = document.createElement('div');
+            row2.className = 'row container';
+
+            const col1 = document.createElement('div');
+            col1.className = 'col';
+
+            const col2 = document.createElement('div');
+            col2.className = 'col';
 
             const title = document.createElement('h3');
             title.id = 'title';
@@ -46,6 +52,7 @@ fetch('https://crudpi.io/c4989d/posts')
 
             const date = document.createElement('h5');
             date.id = 'date';
+            date.className = "mb-4 mt-0"
             date.textContent = posts[i].date;
 
             const body = document.createElement('p');
@@ -53,18 +60,23 @@ fetch('https://crudpi.io/c4989d/posts')
             body.textContent = posts[i].body;
 
             const img = document.createElement('img');
+            img.className = "mb-3"
             img.src = posts[i].imageUrl;
 
-            div.appendChild(row);
-            row.appendChild(col);
+            div.appendChild(row1);
+            row1.appendChild(col1);
 
-            col.appendChild(title);
-            col.appendChild(author);
-            col.appendChild(rating);
-            col.appendChild(date);
-            col.appendChild(body);
+            col1.appendChild(title);
+            col1.appendChild(author);
+            col1.appendChild(rating);
 
             div.appendChild(img);
+
+            div.appendChild(row2);
+            row2.appendChild(col2);
+
+            col2.appendChild(body);
+            col2.appendChild(date);
 
             postsElement.appendChild(div);
         }
