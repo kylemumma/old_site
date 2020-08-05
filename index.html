@@ -29,24 +29,24 @@
     </head>
     <body>
         <div class="container-fluid">
-            <!--Landing Screen-->
-            <div id=landing-screen class="row full height">
-                <!-- Top Nav Bar -->
-                <nav id="nav-bar">
-                    <a href="https://github.com/kylemumma" target="_blank" class="nav-link nav-link-icon lead"><i class="fab fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/kylemumma/" target="_blank" class="nav-link nav-link-icon lead"><i class="fab fa-linkedin"></i></a>
-                    <a href="reading-list.html" target="_blank" class="nav-link lead">Blog</a>
-                </nav>
+            <!-- Top Bar -->
+            <div id="top-bar" class="row text-center align-middle">
+                    <a href="https://github.com/kylemumma" target="_blank" class="nav-link lead col-6"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/kylemumma/" target="_blank" class="nav-link lead col-6"><i class="fab fa-linkedin"></i></a>
+            </div>
 
-                <table class="full-height text-center col-12">
-                    <tbody>
-                        <td class="align-middle">
-                            Hello, I'm <span class="yellow">Kyle Mumma</span>.<br>
-                            I'm a CS Student at <a class="yellow dub-link" href="https://www.cs.washington.edu/" target="_blank">UW</a><br>
-                            <a id="view-work-button" href="#skills" class="mt-3 btn btn-lg btn-outline-light">View my work <i id="arrow" class="ml-2 fas fa-arrow-right"></i></a>
-                        </td>
-                    </tbody>
-                </table>
+            <!--Landing Screen-->
+            <div id=landing-screen class="row align-middle">
+                <div class="col-12 text-center pt-4 align-middle">
+                    Hello, I'm <span class="primary-light">Kyle Mumma</span>.<br>
+                    I'm a CS Student at <a class="primary-light dub-link" href="https://www.cs.washington.edu/" target="_blank">UW</a><br>
+                </div>
+                <div class="col-12 text-center">
+                    <img src="/images/me.jpg" alt="Portrait of Kyle Mumma" class="main-portrait img-thumbnail my-4" /><br>
+                </div>
+                <div class="col-12 text-center pb-4">
+                    <a id="view-work-button" href="#skills" class="mt-3 btn btn-lg btn-outline-dark">View my work <i id="arrow" class="ml-2 fas fa-arrow-right"></i></a>
+                </div>
             </div>
 
         
@@ -119,23 +119,62 @@
             <div id="projects">
                 <!--Projects Header-->
                 <h2 class="my-4 col-12 section-header text-center">Projects</h2>
-                <h3>Full-Stack Projects</h3><br>
+                <h3 class="mt-0">Full-Stack</h3>
                 <ul>
-                    <li>Senior Assassin Manager</li>
-                    <li>Snapsee</li>
-                    <li>Campus Pathfinder</li>
+                    <li>
+                        <a href="https://github.com/kylemumma/senior_assassin" target="_blank">Senior Assassin Manager</a>
+                        <div class="sub">
+                            React | Node.js | NeDB | Express
+                        </div>
+                    </li>
+                    <li>
+                        <a href="https://github.com/kylemumma/Snapsee" target="_blank">Snapsee</a>
+                        <div class="sub">
+                            React | Flask | Postgresql
+                        </div>
+                    </li>
+                    <li>
+                        <a href="https://gitlab.cs.washington.edu/cse331-20wi-students/cse331-20wi-kmumma1/-/tree/master/hw-campuspaths" target="_blank">Campus Pathfinder</a>
+                        <div class="sub">
+                            React | Java Spark | Bootstrap
+                        </div>
+                    </li>
                 </ul>
-                <h3>Front-End Projects</h3><br>
+                <h3>Front-End</h3>
                 <ul>
-                    <li><a href="https://codepen.io/kylemumma/full/rRRVgr">Random Quote Generator | HTML/Sass + Bootstrap + JS + jQuery + API </a></li>
-                    <li><a href="https://codepen.io/kylemumma/full/KYdNZW">Markdown Editor | HTML/Sass + Bootstrap + React </a></li>
-                    <li>Bibliosearch</li>
-                    <li>Chess</li>
-                    <li><a href="https://codepen.io/kylemumma/full/WLEqOG">Gossamer Gear | HTML/CSS </a></li>
+                    <li>
+                        <a href="https://github.com/kylemumma/Bibliosearch" target="_blank">Bibliosearch</a>
+                        <div class="sub">
+                            Flask | OpenCV | PyTesseract
+                        </div>
+                    </li>
+                    <li>
+                        <a href="https://codepen.io/kylemumma/full/KYdNZW" target="_blank">Markdown Editor</a>
+                        <div class="sub">
+                            React | Bootstrap | Sass
+                        </div>
+                    </li>
+                    <li>
+                        <a href="https://codepen.io/kylemumma/full/rRRVgr" target="_blank">Random Quote Generator</a>
+                        <div class="sub">
+                            Javascript | jQuery | Bootstrap | Quotes API | Sass
+                        </div>
+                    </li>
+                    <li>
+                        <a href="https://codepen.io/kylemumma/full/WLEqOG" target="_blank">Gossamer Gear</a>
+                        <div class="sub">
+                            HTML | CSS
+                        </div>
+                    </li>
                 </ul>
-                <h3>Back-End Projects</h3><br>
+                <h3>Back-End</h3>
                 <ul> 
-                    <li>Daltonization API</li>
+                    <li>
+                        <a href="https://rural-chevre.glitch.me/" target="_blank">Daltonization API</a>
+                        <div class="sub">
+                            Flask
+                        </div>
+                    </li>
                 </ul>
             </div>
 
@@ -145,7 +184,6 @@
                     <a class="icon-link" href="https://github.com/kylemumma" target="_blank"><i class="fab fa-github"></i></a>
                     <a class="icon-link" href="https://www.linkedin.com/in/kylemumma/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
                     <a class="icon-link" href="mailto:kyle.mumma@live.com" target="_blank"><i class="far fa-envelope"></i></a>
-                    <a class="icon-link" href="https://www.instagram.com/kylemummacodes/" target="_blank"><i class="fab fa-instagram"></i></a>
                     <a class="icon-link" href="https://codepen.io/kylemumma/" target="_blank"><i class="fab fa-codepen"></i></a>
                     <a class="icon-link" href="./resources/resume.pdf" target="_blank"><i class="fas fa-file"></i></a>
                 </div>
